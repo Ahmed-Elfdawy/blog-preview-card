@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "Figtree";
+  src: url("./fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900; /* variable font range */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("./fonts/Figtree-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("./static/Figtree-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("./static/Figtree-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(244, 208, 78);
+}
+
+.card {
+  background-color: white;
+  border-radius: 1.25rem;
+  box-shadow: 8px 8px 0px rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  margin: 1.5rem;
+}
+.card img {
+  max-width: 100%;
+}
+.card article {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: self-start;
+}
+
+.card article span:first-of-type {
+  background-color: rgb(244, 208, 78);
+  font-size: 0.75rem;
+  font-family: "Figtree", sans-serif;
+  font-weight: 800;
+  text-align: center;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.card article span:last-of-type {
+  font-size: 0.75rem;
+  font-family: "Figtree", sans-serif;
+  font-weight: 500;
+}
+
+.card article h1 {
+  margin: 0;
+  font-family: "Figtree", sans-serif;
+  font-weight: 800;
+  font-size: 1.25rem;
+}
+
+.card article p {
+  margin: 0;
+  font-family: "Figtree", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  max-width: 20rem;
+}
+
+.card .creator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.card .creator img {
+  width: 2rem;
+}
